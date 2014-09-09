@@ -37,6 +37,7 @@ public class Queue extends LinkedList<Double>{
 		case 'n':
 			this.checkOperands(1);
 			this.addLast(-this.pollFirst());
+			return;
 		default:
 			throw new OperandNotRecognized();
 		}
